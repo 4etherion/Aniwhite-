@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower - Discover the Beauty of Nature</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="petalGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#ff69b4;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#ffb6c1;stop-opacity:0.7" />
+                            <stop offset="100%" style="stop-color:#ffc0cb;stop-opacity:0.4" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Three petals -->
+                    <ellipse cx="30" cy="70" rx="15" ry="35" fill="url(#petalGradient)" transform="rotate(-20 30 70)"/>
+                    <ellipse cx="50" cy="65" rx="15" ry="40" fill="url(#petalGradient)" transform="rotate(0 50 65)"/>
+                    <ellipse cx="70" cy="70" rx="15" ry="35" fill="url(#petalGradient)" transform="rotate(20 70 70)"/>
+                </svg>
+                <span class="brand-name">Flower</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover the Beauty of Flowers</h1>
+            <p class="hero-subtitle">Where nature's elegance meets timeless beauty</p>
+            <button class="cta-button">Explore Collection</button>
+        </div>
+        <div class="hero-image">
+            <div class="flower-card">
+                <div class="flower-img rose"></div>
+                <h3>Rose</h3>
+                <p>Symbol of love and passion</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2 class="section-title">Our Beautiful Collection</h2>
+        <div class="gallery-grid">
+            <div class="flower-card">
+                <div class="flower-img rose"></div>
+                <h3>Rose</h3>
+                <p>The timeless symbol of love, available in countless colors and varieties.</p>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img tulip"></div>
+                <h3>Tulip</h3>
+                <p>Elegant spring blooms that bring joy and color to any garden.</p>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img cherry"></div>
+                <h3>Cherry Blossom</h3>
+                <p>Delicate pink petals that celebrate the beauty of spring.</p>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img lily"></div>
+                <h3>Lily</h3>
+                <p>Graceful flowers symbolizing purity and refined beauty.</p>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img peony"></div>
+                <h3>Peony</h3>
+                <p>Lush, romantic blooms representing prosperity and good fortune.</p>
+            </div>
+            <div class="flower-card">
+                <div class="flower-img orchid"></div>
+                <h3>Orchid</h3>
+                <p>Exotic and sophisticated, a testament to nature's artistry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 class="section-title">About Flower</h2>
+            <p>Flower is dedicated to showcasing the magnificent beauty of nature's most precious creations. Each bloom tells a story of elegance, resilience, and natural perfection.</p>
+            <p>Our mission is to inspire appreciation for the delicate artistry found in every petal, celebrating the diverse colors, shapes, and fragrances that flowers bring to our world.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-info">
+            <div class="creator-info">
+                <h3>Created by Aetherion</h3>
+                <div class="social-links">
+                    <div class="social-item">
+                        <span class="social-label">Discord:</span>
+                        <span class="social-value">4etherion_</span>
+                    </div>
+                    <div class="social-item">
+                        <span class="social-label">Instagram:</span>
+                        <span class="social-value">karabukdengeldik</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Flower. All rights reserved.</p>
+    </footer>
+
+    <!-- AI Chat Button -->
+    <div class="ai-chat-container">
+        <button class="ai-chat-button" id="aiChatButton">
+            <svg class="chat-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12C2 13.93 2.6 15.73 3.62 17.21L2.22 21.78L7.08 20.38C8.47 21.31 10.18 21.88 12 21.88C17.52 21.88 22 17.4 22 11.88C22 6.36 17.52 2 12 2Z" fill="currentColor"/>
+            </svg>
+        </button>
+        
+        <!-- AI Chat Panel -->
+        <div class="ai-chat-panel" id="aiChatPanel">
+            <div class="chat-header">
+                <div class="chat-logo">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="petalGradientChat" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#ff69b4;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#ffb6c1;stop-opacity:0.7" />
+                                <stop offset="100%" style="stop-color:#ffc0cb;stop-opacity:0.4" />
+                            </linearGradient>
+                        </defs>
+                        <ellipse cx="30" cy="70" rx="15" ry="35" fill="url(#petalGradientChat)" transform="rotate(-20 30 70)"/>
+                        <ellipse cx="50" cy="65" rx="15" ry="40" fill="url(#petalGradientChat)" transform="rotate(0 50 65)"/>
+                        <ellipse cx="70" cy="70" rx="15" ry="35" fill="url(#petalGradientChat)" transform="rotate(20 70 70)"/>
+                    </svg>
+                    <span>Flower-1 Max</span>
+                </div>
+                <button class="close-chat" id="closeChat">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="chat-body" id="chatBody">
+                <div class="auth-container" id="authContainer">
+                    <div class="auth-content">
+                        <h3>Welcome to Flower AI</h3>
+                        <p>Please sign in with Google to start chatting</p>
+                        <div id="g_id_onload"
+                             data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                             data-callback="handleCredentialResponse">
+                        </div>
+                        <div class="g_id_signin" 
+                             data-type="standard"
+                             data-size="large"
+                             data-theme="outline"
+                             data-text="sign_in_with"
+                             data-shape="rectangular"
+                             data-logo_alignment="left">
+                        </div>
+                        <button class="google-signin-btn" id="googleSignIn">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            </svg>
+                            Sign in with Google
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="chat-messages" id="chatMessages" style="display: none;">
+                    <div class="welcome-message">
+                        <h3>Welcome to Flower AI</h3>
+                        <p>I'm here to help you learn about flowers, nature, and answer any questions you may have!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input-container" id="chatInputContainer" style="display: none;">
+                <textarea 
+                    class="chat-input" 
+                    id="chatInput" 
+                    placeholder="Ask me anything about flowers..."
+                    rows="1"
+                ></textarea>
+                <button class="send-button" id="sendButton">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Overlay for mobile/fullscreen -->
+        <div class="chat-overlay" id="chatOverlay"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
