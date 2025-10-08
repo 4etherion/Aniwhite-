@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower - Discover the Beauty of Flowers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <svg class="logo" width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="petalGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#ff69b4;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#ffb6c1;stop-opacity:0.7" />
+                            <stop offset="100%" style="stop-color:#ffc0cb;stop-opacity:0.3" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Three petals opening upward from connected base -->
+                    <path d="M20 35 Q15 20 20 10 Q25 20 30 35 Z" fill="url(#petalGradient)" opacity="0.9"/>
+                    <path d="M30 35 Q30 20 35 10 Q35 20 35 35 Z" fill="url(#petalGradient)" opacity="0.7"/>
+                    <path d="M35 35 Q40 20 45 10 Q40 20 40 35 Z" fill="url(#petalGradient)" opacity="0.5"/>
+                    <!-- Center circle -->
+                    <circle cx="30" cy="35" r="3" fill="#ff69b4" opacity="0.8"/>
+                </svg>
+                <span class="logo-text">Flower</span>
+            </div>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <button id="googleSignIn" class="sign-in-btn">Sign in with Google</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover the Beauty of Flowers</h1>
+            <p class="hero-subtitle">Immerse yourself in nature's most delicate creations</p>
+            <div class="hero-decoration">
+                <span class="petal petal-1"></span>
+                <span class="petal petal-2"></span>
+                <span class="petal petal-3"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Flower Gallery</h2>
+            <p class="section-subtitle">Each bloom tells a unique story of nature's artistry</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="flower-card">
+                        <div class="flower-image rose"></div>
+                        <h3>Rose</h3>
+                        <p>Symbol of love and passion, roses captivate with their elegant petals and enchanting fragrance.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="flower-card">
+                        <div class="flower-image lily"></div>
+                        <h3>Lily</h3>
+                        <p>Pure and graceful, lilies represent rebirth and the beauty of life's continuous renewal.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="flower-card">
+                        <div class="flower-image tulip"></div>
+                        <h3>Tulip</h3>
+                        <p>Spring's herald, tulips bring joy with their vibrant colors and perfect symmetry.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="flower-card">
+                        <div class="flower-image daisy"></div>
+                        <h3>Daisy</h3>
+                        <p>Simple yet charming, daisies remind us of innocence and the beauty in simplicity.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="flower-card">
+                        <div class="flower-image orchid"></div>
+                        <h3>Orchid</h3>
+                        <p>Exotic and sophisticated, orchids embody luxury and refined beauty.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="flower-card">
+                        <div class="flower-image sunflower"></div>
+                        <h3>Sunflower</h3>
+                        <p>Radiant and bold, sunflowers follow the sun and spread happiness wherever they bloom.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Flower</h2>
+            <div class="about-content">
+                <p>Welcome to Flower, where we celebrate the extraordinary beauty of nature's most delicate creations. Our mission is to share the wonder and elegance of flowers with the world, inspiring appreciation for these remarkable gifts of nature.</p>
+                <p>From the gentle morning dew on rose petals to the vibrant dance of wildflowers in the breeze, every flower has a story to tell. Join us in exploring the enchanting world of blooms.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Connect With Us</h2>
+            <div class="creator-info">
+                <p class="creator-title">Created with ❤️ by Aetherion</p>
+                <div class="social-links">
+                    <a href="https://discord.com/users/4etherion_" target="_blank" class="social-link">
+                        <span>Discord: 4etherion_</span>
+                    </a>
+                    <a href="https://instagram.com/karabukdengeldik" target="_blank" class="social-link">
+                        <span>Instagram: @karabukdengeldik</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chat Button -->
+    <button id="aiChatBtn" class="ai-chat-btn" aria-label="Open AI Chat">
+        <svg class="chat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="currentColor"/>
+            <path d="M12 6C9.79 6 8 7.79 8 10C8 12.21 9.79 14 12 14C14.21 14 16 12.21 16 10C16 7.79 14.21 6 12 6Z" fill="currentColor"/>
+        </svg>
+    </button>
+
+    <!-- AI Chat Panel -->
+    <div id="aiChatPanel" class="ai-chat-panel">
+        <div class="chat-overlay"></div>
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="chat-header-left">
+                    <svg class="chat-logo" width="30" height="30" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="chatPetalGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#ff69b4;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#ffb6c1;stop-opacity:0.7" />
+                                <stop offset="100%" style="stop-color:#ffc0cb;stop-opacity:0.3" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M20 35 Q15 20 20 10 Q25 20 30 35 Z" fill="url(#chatPetalGradient)" opacity="0.9"/>
+                        <path d="M30 35 Q30 20 35 10 Q35 20 35 35 Z" fill="url(#chatPetalGradient)" opacity="0.7"/>
+                        <path d="M35 35 Q40 20 45 10 Q40 20 40 35 Z" fill="url(#chatPetalGradient)" opacity="0.5"/>
+                        <circle cx="30" cy="35" r="3" fill="#ff69b4" opacity="0.8"/>
+                    </svg>
+                    <span class="chat-title">Flower-1 Max</span>
+                </div>
+                <button id="closeChatBtn" class="close-chat-btn">×</button>
+            </div>
+            <div id="chatMessages" class="chat-messages">
+                <div class="welcome-message">
+                    <p>Welcome to Flower-1 Max! I'm here to help you discover the beauty of flowers and answer any questions you may have. How can I assist you today?</p>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <textarea id="chatInput" class="chat-input" placeholder="Type your message..." rows="1"></textarea>
+                <button id="sendBtn" class="send-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Sign In -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.0/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
